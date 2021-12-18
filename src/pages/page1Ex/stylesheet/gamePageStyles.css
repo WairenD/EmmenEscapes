@@ -1,0 +1,26 @@
+/* main background */
+#mainContainer {
+    height: 100%;
+    width:100%;
+}
+
+#imageContainer {
+    height:70%;
+    width:70%;
+    background-color: red;
+    margin: 0 auto;
+}
+
+#houseImage {
+    height:100%;
+    width:100%;
+}
+
+
+/* UI */
+#inventory {
+    width:80%;
+    height:200px;
+    background-color: red;
+    margin: 0 auto;
+}
