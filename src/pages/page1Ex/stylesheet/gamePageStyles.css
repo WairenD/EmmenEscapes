@@ -16,12 +16,13 @@
     width:100%;
 }
 
-/* player avatar */
+/* player avatar positions ground floor*/
 #playerAvatar {
     max-width: 3%;
     height: auto;
     position:absolute;
-    top:20px;
+    top:38.5%;
+    left:45%;
 }
 
 /* UI */
