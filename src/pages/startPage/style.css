@@ -1,0 +1,49 @@
+body{
+  background-color: black
+}
+.content{
+  height: 100%;
+  width: 100%;
+}
+.title{
+  background-image: url("../../../assets/images/Artboard 2.png");
+  height: 20rem;
+  width: 50rem;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.startBtn{
+  text-decoration: none!important;
+  font-weight: bold;
+  font-family: Compact;
+  border: 5px solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: 3px;
+  color: green;
+  width: 10rem;
+  height: 5rem;
+}
+.startBtnWrapper{
+  margin-top: 5rem;
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+}
+.keyhole{
+  height: 30rem;
+  bottom: 2rem;
+  right: 5rem;
+  position:absolute;
+}
+.key{
+  transform: rotate(-20deg);
+  height: 25rem;
+  bottom: 5rem;
+  left: 5rem;
+  position:absolute;
+}
