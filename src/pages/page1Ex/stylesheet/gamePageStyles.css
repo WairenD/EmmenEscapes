@@ -16,6 +16,13 @@
     width:100%;
 }
 
+/* player avatar */
+#playerAvatar {
+    max-width: 3%;
+    height: auto;
+    position:absolute;
+    top:20px;
+}
 
 /* UI */
 #inventory {
