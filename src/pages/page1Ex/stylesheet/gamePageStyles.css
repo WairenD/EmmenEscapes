@@ -3,23 +3,61 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: black;
+}
 #mainContainer {
     height: 100%;
     width: 100%;
-    position: relative;
     margin: auto;
 }
 #imageContainer {
-    position: absolute;
+    position: relative;
     background-image: url("../../../../assets/images/house.png");
     height:80vh;
-    width:100%;
+    width: 70vw;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin: 0 auto;
+    background-color: red
 }
-
+#key1Hitbox{
+  position: absolute;
+  left: 19vw;
+  bottom: 4vh;
+  width: 5vw;
+  height: 10.5vh;
+  background-color: yellow;
+  opacity: .5;
+}
+#key2Hitbox{
+  position: absolute;
+  left: 31.5vw;
+  bottom: 4vh;
+  width: 4.5vw;
+  height: 10.5vh;
+  background-color: red;
+  opacity: .5;
+}
+#doorHitbox{
+  position: absolute;
+  left: 25vw;
+  bottom: 4vh;
+  width: 10vw;
+  height: 10.5vh;
+  background-color: green;
+  opacity: .5;
+}
+#catHitbox{
+  position: absolute;
+  left: 52.7vw;
+  bottom: 4vh;
+  width: 5.7vw;
+  height: 9.5vh;
+  background-color: blue;
+  opacity: .5;
+}
 #houseImage {
     height:100%;
     width:100%;
