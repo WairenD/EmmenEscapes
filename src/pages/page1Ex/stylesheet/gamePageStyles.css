@@ -28,8 +28,11 @@ body{
   bottom: 4vh;
   width: 5vw;
   height: 10.5vh;
-  background-color: yellow;
   opacity: .5;
+  background-color: red;
+}
+#key1Hitbox:hover,#key2Hitbox:hover{
+  cursor: pointer;
 }
 #key2Hitbox{
   position: absolute;
@@ -37,25 +40,34 @@ body{
   bottom: 4vh;
   width: 4.5vw;
   height: 10.5vh;
-  background-color: red;
   opacity: .5;
+  background-color: red;
 }
 #doorHitbox{
   position: absolute;
-  left: 25vw;
+  left: 24vw;
   bottom: 4vh;
-  width: 10vw;
-  height: 10.5vh;
+  width: 7vw;
+  height: 15.5vh;
   background-color: green;
+  opacity: .5;
+}
+#boxHitbox{
+  position: absolute;
+  left: 52.7vw;
+  bottom: 4vh;
+  width: 5.7vw;
+  height: 5vh;
+  background-color: blue;
   opacity: .5;
 }
 #catHitbox{
   position: absolute;
   left: 52.7vw;
-  bottom: 4vh;
+  bottom: 9vh;
   width: 5.7vw;
-  height: 9.5vh;
-  background-color: blue;
+  height: 4.5vh;
+  background-color: red;
   opacity: .5;
 }
 #houseImage {
@@ -74,8 +86,8 @@ body{
 
 /* UI */
 #inventory {
-    width:80%;
-    height:200px;
-    background-color: red;
-    margin: 0 auto;
+    width: 70vw;
+    height: 10vh;
+    color:white;
+    margin: auto;
 }
