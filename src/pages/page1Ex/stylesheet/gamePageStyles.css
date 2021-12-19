@@ -20,7 +20,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    background-color: red
 }
 #key1Hitbox{
   position: absolute;
@@ -69,12 +68,18 @@ body{
   height: 4.5vh;
   background-color: red;
   opacity: .5;
+  z-index: 10
 }
 #houseImage {
     height:100%;
     width:100%;
 }
-
+#sfxJoJo{
+  position: absolute;
+  right:9.8vw;
+  bottom: 8.1vh;
+  opacity: 0;
+}
 /* player avatar positions ground floor*/
 #playerAvatar {
     max-width: 3%;
