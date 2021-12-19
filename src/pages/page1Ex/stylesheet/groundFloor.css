@@ -1,0 +1,67 @@
+/* main background */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+}
+#mainContainer {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+#imageContainer {
+    position: relative;
+    background-image: url("../../../../assets/gameStates/no keys/start-cat-noKeys.png");
+    height:80vh;
+    width: 70vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#doorHitboxBottom{
+  position: absolute;
+  left: 24vw;
+  bottom: 4vh;
+  width: 7vw;
+  height: 15.5vh;
+  background-color: green;
+  opacity: .5;
+}
+#doorHitboxGround{
+  position: absolute;
+  left: 24vw;
+  bottom: 27.5vh;
+  width: 7vw;
+  height: 15.5vh;
+  background-color: green;
+  opacity: .5;
+}
+#doorHitboxTop{
+  position: absolute;
+  left: 24vw;
+  bottom: 53vh;
+  width: 7vw;
+  height: 15.5vh;
+  background-color: green;
+  opacity: .5;
+}
+/* player avatar positions ground floor*/
+#playerAvatar {
+    max-width: 3%;
+    height: auto;
+    position:absolute;
+    top:38.5%;
+    left:45%;
+}
+
+/* UI */
+#inventory {
+    width: 70vw;
+    height: 10vh;
+    color:white;
+    margin: auto;
+}

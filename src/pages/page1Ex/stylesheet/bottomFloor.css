@@ -42,10 +42,28 @@ body{
   opacity: .5;
   background-color: red;
 }
-#doorHitbox{
+#doorHitboxBottom{
   position: absolute;
   left: 24vw;
   bottom: 4vh;
+  width: 7vw;
+  height: 15.5vh;
+  background-color: green;
+  opacity: .5;
+}
+#doorHitboxGround{
+  position: absolute;
+  left: 24vw;
+  bottom: 27.5vh;
+  width: 7vw;
+  height: 15.5vh;
+  background-color: green;
+  opacity: .5;
+}
+#doorHitboxTop{
+  position: absolute;
+  left: 24vw;
+  bottom: 53vh;
   width: 7vw;
   height: 15.5vh;
   background-color: green;
@@ -57,7 +75,6 @@ body{
   bottom: 4vh;
   width: 5.7vw;
   height: 5vh;
-  background-color: blue;
   opacity: .5;
 }
 #catHitbox{
@@ -66,7 +83,6 @@ body{
   bottom: 9vh;
   width: 5.7vw;
   height: 4.5vh;
-  background-color: red;
   opacity: .5;
   z-index: 10
 }
