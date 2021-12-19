@@ -2,6 +2,7 @@ var inventory = [];
 var catRemoved = false;
 let txt = "";
 
+if()
 function addItem(item){
   if(!inventory.includes(item) || inventory == null){
       inventory.push(item);
