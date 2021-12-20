@@ -73,3 +73,25 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     /* Black w/ opacity */
 }
+#form-container{
+  margin-left: 45vw;
+  width: 25rem;
+  color: white;
+  background:radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,121,99,1) 51%, rgba(0,212,255,1) 100%);
+  padding-bottom: 1rem;
+  border-radius:5px;
+}
+button{
+  border:none;
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+label{
+  margin-left: 1rem;
+}
+#title{
+  margin-left:7rem;
+  margin-bottom: 1rem;
+}
