@@ -23,26 +23,32 @@ function loadInventory(){
 
         for(let i = items.length - 1; i >= 0; i--)
         {
-            let string = "<img class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
-            appendString += string;
+            if(items[i] === 'paper')
+            {
+                let string = "<img onClick='paperPopup()' class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
+                appendString += string;
+            } else {
+                let string = "<img class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
+                appendString += string;
+            }
         }
 
         $('#inventory').prepend(appendString);
     }
 }
 
+function paperPopup(){
+    alert('The video tapes! They are located on the server, encrypted and unreachable.. \n ' +
+        'unless you can find out what the password is.. I am being held hostage.. \n' +
+        'the only hint that I managed to get out of them was the following, I know its two words but now what words \n \n' +
+        'word 1: either a single 1 or 0 from many, or a painful jaw from the past, what am I?\n' +
+        'word 2: I have a head and a tail but no body what am I?. ');
+}
+
 function addItem(item) {
     if (!inventory.includes(item) || inventory == null) {
         inventory.push(item);
-        // let jsonObj = {inventory: []};
-        // jsonObj.inventory.push(item);
         localStorage.setItem('inventory', inventory);
-        // var element = document.createElement('img');
-        // element.setAttribute("id", item);
-        // document.getElementById('inventory').appendChild(element);
-        // document.getElementById(item).src = "../../assets/images/" + item + ".png";
-        // document.getElementById(item).style.marginRight = "2rem";
-        // document.getElementById(item).style.marginTop = "2rem";
         loadInventory();
     }
 }
@@ -56,8 +62,14 @@ window.onload = function loadInventory(){
 
       for(let i = items.length - 1; i >= 0; i--)
       {
-          let string = "<img class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
-          appendString += string;
+          if(items[i] === 'paper')
+          {
+              let string = "<img onClick='paperPopup()' class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
+              appendString += string;
+          } else {
+              let string = "<img class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
+              appendString += string;
+          }
       }
 
     $('#inventory').prepend(appendString);
