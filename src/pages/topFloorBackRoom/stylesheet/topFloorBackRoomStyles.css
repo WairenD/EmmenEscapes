@@ -1,0 +1,56 @@
+/* main background */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+#mainContainer {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+#imageContainer {
+    position: relative;
+    background-image: url("../../../../assets/images/house.png");
+    height:80vh;
+    width: 70vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#safeDoorHitbot{
+    position: absolute;
+    left: 47.5vw;
+    top: 9vh;
+    width: 1.8vw;
+    height: 18vh;
+    background-color: blue;
+    opacity: .5;
+}
+
+#computerHitbox{
+    position: absolute;
+    right: 9.8vw;
+    top: 20vh;
+    width: 5vw;
+    height: 7vh;
+    background-color: red;
+    opacity: .5;
+}
+
+#houseImage {
+    height:100%;
+    width:100%;
+}
+
+/* UI */
+#inventory {
+    width: 70vw;
+    height: 10vh;
+    color:white;
+    margin: auto;
+}
