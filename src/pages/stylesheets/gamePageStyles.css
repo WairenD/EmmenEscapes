@@ -13,7 +13,7 @@ body{
 }
 #imageContainer {
     position: relative;
-    background-image: url("../../../../assets/images/house.png");
+    background-image: url("../../../assets/images/house.png");
     height:80vh;
     width: 70vw;
     background-position: center;

@@ -17,7 +17,7 @@ body {
 
 #imageContainer {
     position: relative;
-    background-image: url("../../../../assets/images/numpad.png");
+    background-image: url("../../../assets/images/numpad.png");
     height: 70vh;
     width: 70vw;
     background-position: center;
