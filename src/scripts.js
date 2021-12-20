@@ -143,14 +143,17 @@ function enter() {
     comparePasswords();
 }
 
+function  goToTopFloorBackRoom(){
+    window.location.href = "./topFloorBackRoom.html";
+}
+
 function comparePasswords() {
     if (insertedPassword === password) {
         successSound.play();
-
+        goToTopFloorBackRoom();
     } else {
         failSound.play();
         reset();
-        goToTopFloorBackRoom();
     }
 }
 
