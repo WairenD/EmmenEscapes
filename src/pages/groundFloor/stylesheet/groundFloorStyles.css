@@ -1,0 +1,98 @@
+/* main background */
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+}
+#mainContainer {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+#imageContainer {
+    position: relative;
+    background-image: url("../../../../assets/images/house.png");
+    height:80vh;
+    width: 70vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+#key1Hitbox{
+  position: absolute;
+  left: 19vw;
+  bottom: 4vh;
+  width: 5vw;
+  height: 10.5vh;
+  opacity: .5;
+  background-color: red;
+}
+#key1Hitbox:hover,#key2Hitbox:hover{
+  cursor: pointer;
+}
+#key2Hitbox{
+  position: absolute;
+  left: 31.5vw;
+  bottom: 4vh;
+  width: 4.5vw;
+  height: 10.5vh;
+  opacity: .5;
+  background-color: red;
+}
+#doorHitbox{
+  position: absolute;
+  left: 24vw;
+  bottom: 4vh;
+  width: 7vw;
+  height: 15.5vh;
+  background-color: green;
+  opacity: .5;
+}
+#boxHitbox{
+  position: absolute;
+  left: 52.7vw;
+  bottom: 4vh;
+  width: 5.7vw;
+  height: 5vh;
+  background-color: blue;
+  opacity: .5;
+}
+#catHitbox{
+  position: absolute;
+  left: 52.7vw;
+  bottom: 9vh;
+  width: 5.7vw;
+  height: 4.5vh;
+  background-color: red;
+  opacity: .5;
+  z-index: 10
+}
+#houseImage {
+    height:100%;
+    width:100%;
+}
+#sfxJoJo{
+  position: absolute;
+  right:9.8vw;
+  bottom: 8.1vh;
+  opacity: 0;
+}
+/* player avatar positions ground floor*/
+#playerAvatar {
+    max-width: 3%;
+    height: auto;
+    position:absolute;
+    top:38.5%;
+    left:45%;
+}
+
+/* UI */
+#inventory {
+    width: 70vw;
+    height: 10vh;
+    color:white;
+    margin: auto;
+}
