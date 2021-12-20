@@ -13,7 +13,7 @@ body{
 }
 #imageContainer {
     position: relative;
-    background-image: url("../../../assets/gameStates/bottomFloor-cat-keys.png");
+    background-image: url("../../../assets/gameStates/no keys/bottomFloor-cat-noKeys.png");
     height:80vh;
     width: 70vw;
     background-position: center;
