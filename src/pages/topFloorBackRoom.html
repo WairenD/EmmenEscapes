@@ -11,8 +11,21 @@
 <body>
 <div id="mainContainer">
   <div id="imageContainer">
+    <div></div>
+    <div class="form-popup" id="myForm">
+      <form action="" class="form-container">
+        <h1>Login</h1>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closePasswordForm()">Close</button>
+      </form>
+    </div>
+
     <div id="safeDoorHitbot"></div>
-    <div id="computerHitbox"></div>
+    <div id="computerHitbox" onclick="openPasswordForm()"></div>
   </div>
   <div id="inventory"></div>
 </div>

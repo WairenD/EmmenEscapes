@@ -1,32 +1,67 @@
 var inventory = [];
 var catRemoved = false;
 
+$(document).ready(function () {
+    console.log(123)
+    let items = localStorage.getItem('inventory');
+    items = items.split(',');
+    for(let i = 0; i < items.length; i++)
+    {
+        inventory.push(items[i]);
+    }
+    console.log('inventory in loader: ', inventory);
+});
+
+function loadInventory(){
+    $('#inventory').empty();
+    let inventory = localStorage.getItem('inventory')
+    console.log(inventory);
+
+    if(inventory !== null && inventory !== undefined){
+        let items = inventory.split(',');
+        let appendString = '';
+
+        for(let i = items.length - 1; i >= 0; i--)
+        {
+            let string = "<img class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
+            appendString += string;
+        }
+
+        $('#inventory').prepend(appendString);
+    }
+}
 
 function addItem(item) {
     if (!inventory.includes(item) || inventory == null) {
         inventory.push(item);
+        // let jsonObj = {inventory: []};
+        // jsonObj.inventory.push(item);
         localStorage.setItem('inventory', inventory);
-        var element = document.createElement('img');
-        element.setAttribute("id", item);
-        document.getElementById('inventory').appendChild(element);
-        document.getElementById(item).src = "../../assets/images/" + item + ".png";
-        document.getElementById(item).style.marginRight = "2rem";
-        document.getElementById(item).style.marginTop = "2rem";
+        // var element = document.createElement('img');
+        // element.setAttribute("id", item);
+        // document.getElementById('inventory').appendChild(element);
+        // document.getElementById(item).src = "../../assets/images/" + item + ".png";
+        // document.getElementById(item).style.marginRight = "2rem";
+        // document.getElementById(item).style.marginTop = "2rem";
+        loadInventory();
     }
 }
-window.onload = function loadInventory() {
-    console.log(localStorage.getItem(inventory));
-    if (localStorage.getItem(inventory) != null) {
-        inventory = localStorage.getItem(inventory);
-        inventory.forEach(item => {
-            var element = document.createElement('img');
-            element.setAttribute("id", item);
-            document.getElementById('inventory').appendChild(element);
-            document.getElementById(item).src = "../../assets/images/" + item + ".png";
-            document.getElementById(item).style.marginRight = "2rem";
-            document.getElementById(item).style.marginTop = "2rem";
-        });
-    }
+window.onload = function loadInventory(){
+    $('#inventory').empty();
+    let inventory = localStorage.getItem('inventory')
+
+  if(inventory !== null && inventory !== undefined){
+      let items = inventory.split(',');
+      let appendString = '';
+
+      for(let i = items.length - 1; i >= 0; i--)
+      {
+          let string = "<img class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
+          appendString += string;
+      }
+
+    $('#inventory').prepend(appendString);
+  }
 }
 
 function inventoryIndexOf(number) {
@@ -55,7 +90,6 @@ function openBox(){
 }
 
 function goToGroundFloor() {
-    console.log(sessionStorage.getItem('catRemoved'));
     if (sessionStorage.getItem('catRemoved')) {
         window.location.href = "./groundFloor.html";
         document.getElementById('imageContainer').style.backgroundImage = "url('../../../assets/gameStates/no cat/start-noCat-keys.png')";
