@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 
 function skidoUnlock(){
-    if(inventory.includes("keyFragmen1") && inventory.includes("keyFragmen2") && inventory.includes("keyFragmen3")){
+    if(inventory.includes("keyFragment1") && inventory.includes("keyFragment2") && inventory.includes("keyFragment3")){
         addItem('paper');
     }
 }
