@@ -46,11 +46,3 @@ body{
     height:100%;
     width:100%;
 }
-
-/* UI */
-#inventory {
-    width: 70vw;
-    height: 10vh;
-    color:white;
-    margin: auto;
-}

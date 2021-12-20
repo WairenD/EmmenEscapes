@@ -27,3 +27,10 @@
     background-color: green;
     opacity: .5;
 }
+#inventory{
+  width: 70vw;
+  height: 10vh;
+  color:white;
+  display: flex;
+  margin: auto;
+}

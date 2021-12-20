@@ -134,13 +134,3 @@ body {
     opacity: 50%;
     ;
 }
-
-
-/* UI */
-
-#inventory {
-    width: 70vw;
-    height: 10vh;
-    color: white;
-    margin: auto;
-}
