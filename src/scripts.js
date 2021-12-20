@@ -14,6 +14,20 @@ function addItem(item) {
         document.getElementById(item).style.marginTop = "2rem";
     }
 }
+window.onload = function loadInventory(){
+  console.log(localStorage.getItem(inventory));
+  if(localStorage.getItem(inventory) != null){
+    inventory =  localStorage.getItem(inventory);
+    inventory.forEach(item => {
+      var element = document.createElement('img');
+      element.setAttribute("id", item);
+      document.getElementById('inventory').appendChild(element);
+      document.getElementById(item).src="../../assets/images/"+item+".png";
+      document.getElementById(item).style.marginRight = "2rem";
+      document.getElementById(item).style.marginTop = "2rem";
+    });
+  }
+}
 function inventoryIndexOf(number){
     inventory = localStorage.getItem('inventory');
     inventory = inventory.split(',');
