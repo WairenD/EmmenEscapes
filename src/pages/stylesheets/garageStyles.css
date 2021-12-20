@@ -1,20 +1,24 @@
 /* main background */
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: black;
 }
+
 #mainContainer {
     height: 100%;
     width: 100%;
     margin: auto;
 }
+
 #imageContainer {
     position: relative;
     background-image: url("../../../assets/gameStates/no keys/garage-cat-noKeys.png");
-    height:80vh;
+    height: 80vh;
     width: 70vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +26,7 @@ body{
     margin: 0 auto;
 }
 
-#garageTrigger{
+#garageTrigger {
     position: absolute;
     right: 3vw;
     top: 44vh;
@@ -31,29 +35,29 @@ body{
     display: flex;
 }
 
-#garageArrow{
+#garageArrow {
     height: 50px;
     width: 50px;
     transform: scaleX(-1);
 }
 
-#sliderPuzzleTrigger{
+#sliderPuzzleTrigger {
     position: absolute;
     right: 14vw;
     bottom: 33vh;
-    height:3vh;
-    width:3vh;
+    height: 3vh;
+    width: 3vh;
     background-color: red;
     opacity: .5;
     z-index: 10
 }
 
-#skidoPaperTrigger{
+#skidoPaperTrigger {
     position: absolute;
     right: 16vw;
     bottom: 28vh;
-    height:4vh;
-    width:2.5vh;
+    height: 4vh;
+    width: 2.5vh;
     background-color: blue;
     opacity: .5;
     z-index: 10
@@ -73,12 +77,123 @@ body{
     animation-timing-function: ease;
 }
 
-#garageText{
-    color:black;
+#garageText {
+    color: black;
 }
 
 @keyframes bounce {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 1);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-color: rgb(0, 0, 0, 0);
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tile1,
+.tile2,
+.tile3,
+.tile4,
+.tile5,
+.tile6,
+.tile7,
+.tile8,
+.tile9 {
+    display: table-cell;
+    width: 120px;
+    height: 120px;
+    border: 1px solid white;
+    background: url("../../../assets/images/puzzle2.png");
+    cursor: pointer;
+}
+
+.tile1 {
+    background-position: left top;
+}
+
+.tile2 {
+    background-position: center top;
+}
+
+.tile3 {
+    background-position: right top;
+}
+
+.tile4 {
+    background-position: left center;
+}
+
+.tile5 {
+    background-position: center center;
+}
+
+.tile6 {
+    background-position: right center;
+}
+
+.tile7 {
+    background-position: left bottom;
+}
+
+.tile8 {
+    background-position: center bottom;
+}
+
+.tile9 {
+    background: white;
+    cursor: default;
 }
