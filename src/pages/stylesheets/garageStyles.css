@@ -37,6 +37,28 @@ body{
     transform: scaleX(-1);
 }
 
+#sliderPuzzleTrigger{
+    position: absolute;
+    right: 14vw;
+    bottom: 33vh;
+    height:3vh;
+    width:3vh;
+    background-color: red;
+    opacity: .5;
+    z-index: 10
+}
+
+#skidoPaperTrigger{
+    position: absolute;
+    right: 16vw;
+    bottom: 28vh;
+    height:4vh;
+    width:2.5vh;
+    background-color: blue;
+    opacity: .5;
+    z-index: 10
+}
+
 .child {
     align-self: flex-end;
     width: 100px;

@@ -67,12 +67,7 @@ body{
     height:100%;
     width:100%;
 }
-#sfxJoJo{
-  position: absolute;
-  right:9.8vw;
-  bottom: 8.1vh;
-  opacity: 0;
-}
+
 /* player avatar positions ground floor*/
 #playerAvatar {
     max-width: 3%;
