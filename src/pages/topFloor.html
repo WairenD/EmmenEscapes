@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Top floor</title>
-  <link rel="stylesheet" href="stylesheets/topFloorStyles.css">
-  <link rel="stylesheet" href="globalStyles.css">
-  <script src="../scripts.js"></script>
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="UTF-8">
+    <title>Top floor</title>
+    <link rel="stylesheet" href="stylesheets/topFloorStyles.css">
+    <link rel="stylesheet" href="globalStyles.css">
+    <script src="../scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
+
 <body>
-<div id="mainContainer">
-  <div id="imageContainer">
-    <div onclick="addItem('keyFragment1')" id="key1Hitbox"></div>
-    <div id="doorHitboxTop"></div>
-    <div onclick="addItem('keyFragment2')" id="key2Hitbox"></div>
-    <div onclick="openBox()" id="safeDoorHitbot"></div>
-    <div onclick="goToGroundFloor()" id="doorHitboxGround"></div>
-    <div onclick="goToBottomFloor()" id="doorHitboxBottom"></div>
-  </div>
-  <div id="inventory"></div>
-</div>
+    <div id="mainContainer">
+        <div id="imageContainer">
+            <div onclick="addItem('keyFragment1')" id="key1Hitbox"></div>
+            <div id="doorHitboxTop"></div>
+            <div onclick="addItem('keyFragment2')" id="key2Hitbox"></div>
+            <div onclick="openBox()" id="safeDoorHitbot"></div>
+            <div onclick="goToGroundFloor()" id="doorHitboxGround"></div>
+            <div onclick="goToBottomFloor()" id="doorHitboxBottom"></div>
+        </div>
+        <div id="inventory"></div>
+    </div>
+    <!---modal for numberpad-->
+    <div id="numberpadContainer" class="modal">
+        <div class="modal-content">
+            <div onclick="closethisshit()" <span class="close">&times;</span>
+            </div>
+            <div onclick="buttonClick('1')" id="button1"></div>
+            <div onclick="buttonClick('2')" id="button2"></div>
+            <div onclick="buttonClick('3')" id="button3"></div>
+            <div onclick="buttonClick('4')" id="button4"></div>
+            <div onclick="buttonClick('5')" id="button5"></div>
+            <div onclick="buttonClick('6')" id="button6"></div>
+            <div onclick="buttonClick('7')" id="button7"></div>
+            <div onclick="buttonClick('8')" id="button8"></div>
+            <div onclick="buttonClick('9')" id="button9"></div>
+            <div onclick="buttonClick('0')" id="button0"></div>
+
+            <div onclick="enter()" id="enterButton"></div>
+            <div onclick="reset()" id="resetButton"></div>
+        </div>
+    </div>
 </body>
+
 </html>
