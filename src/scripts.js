@@ -60,6 +60,9 @@ function goToTopFloor(){
         alert("You gonna die bitch!")
     }
 }
+function goToGarage(){
+    window.location.href = "./garage.html";
+}
 function getInventory(value, index, array) {
     txt += value + " ";
 }
