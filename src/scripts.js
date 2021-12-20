@@ -103,10 +103,10 @@ function reset() {
 
 
 // When the user clicks the button, open the modal
-function openBox() {
-    document.getElementById("numberpadContainer").style.display = "block";
-    console.log("modal has been sucessfully opened");
-}
+// function openBox() {
+//     document.getElementById("numberpadContainer").style.display = "block";
+//     console.log("modal has been sucessfully opened");
+// }
 
 // When the user clicks on <span> (x), close the modal
 function closethisshit() {

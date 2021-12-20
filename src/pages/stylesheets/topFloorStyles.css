@@ -17,7 +17,7 @@ body {
 
 #imageContainer {
     position: relative;
-    background-image: url("../../../assets/gameStates/topFloor-noCat-noKeys");
+    background-image: url("../../../assets/gameStates/no keys/topFloor-cat-noKeys.png");
     height: 80vh;
     width: 70vw;
     background-position: center;
