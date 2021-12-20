@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Top floor</title>
-  <link rel="stylesheet" href="stylesheets/topFloorBackRoomStyles.css">
-  <link rel="stylesheet" href="globalStyles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="../scripts.js"></script>
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="UTF-8">
+    <title>Top floor</title>
+    <link rel="stylesheet" href="stylesheets/topFloorBackRoomStyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
+
 <body>
-<div id="mainContainer">
-  <div id="imageContainer">
-    <div></div>
-    <div class="form-popup" id="myForm">
-      <form action="" class="form-container">
-        <h1>Login</h1>
+    <div id="mainContainer">
+        <div id="imageContainer">
+            <div></div>
+            <div class="form-popup" id="myForm" class="modal">
+                <form action="" id="form-container" class="modal-content">
+                    <h1>Login</h1>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" id="psw" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="input" placeholder="Enter Password" id="psw" required>
 
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn cancel" onclick="closePasswordForm()">Close</button>
-      </form>
+                    <button type="button" class="btn" onclick="passwordChecker()">Login</button>
+                    <button type="button" class="btn cancel" onclick="closePasswordForm()">Close</button>
+                </form>
+            </div>
+
+            <div id="safeDoorHitbot"></div>
+            <div id="computerHitbox" onclick="openPasswordForm()"></div>
+            <img src="../../assets/images/cat.png" id="cat">
+            <img id="skidoKeys" src="../../assets/images/skidoKeys.png" alt="skido">
+        </div>
+        <div id="inventory"></div>
     </div>
-
-    <div id="safeDoorHitbot" onClick="goToTopFloor()"></div>
-    <div id="computerHitbox" onclick="openPasswordForm()"></div>
-    <img src="../../assets/images/cat.png" id="cat">
-    <img id="skidoKeys" src="../../assets/images/skidoKeys.png" alt="skido">
-  </div>
-  <div id="inventory"></div>
-</div>
 </body>
+
 </html>

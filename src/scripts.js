@@ -1,29 +1,26 @@
 var inventory = [];
 var catRemoved = false;
 
-$(document).ready(function () {
+$(document).ready(function() {
     let items = localStorage.getItem('inventory');
     items = items.split(',');
-    for(let i = 0; i < items.length; i++)
-    {
+    for (let i = 0; i < items.length; i++) {
         inventory.push(items[i]);
     }
     console.log('inventory in loader: ', inventory);
 });
 
-function loadInventory(){
+function loadInventory() {
     $('#inventory').empty();
     let inventory = localStorage.getItem('inventory')
     console.log(inventory);
 
-    if(inventory !== null && inventory !== undefined){
+    if (inventory !== null && inventory !== undefined) {
         let items = inventory.split(',');
         let appendString = '';
 
-        for(let i = items.length - 1; i >= 0; i--)
-        {
-            if(items[i] === 'paper')
-            {
+        for (let i = items.length - 1; i >= 0; i--) {
+            if (items[i] === 'paper') {
                 let string = "<img onClick='paperPopup()' class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
                 appendString += string;
             } else {
@@ -36,7 +33,7 @@ function loadInventory(){
     }
 }
 
-function paperPopup(){
+function paperPopup() {
     alert('The video tapes! They are located on the server, encrypted and unreachable.. \n ' +
         'unless you can find out what the password is.. I am being held hostage.. \n' +
         'the only hint that I managed to get out of them was the following, I know its two words but now what words \n \n' +
@@ -51,28 +48,26 @@ function addItem(item) {
         loadInventory();
     }
 }
-window.onload = function loadInventory(){
+window.onload = function loadInventory() {
     $('#inventory').empty();
     let inventory = localStorage.getItem('inventory')
 
-  if(inventory !== null && inventory !== undefined){
-      let items = inventory.split(',');
-      let appendString = '';
+    if (inventory !== null && inventory !== undefined) {
+        let items = inventory.split(',');
+        let appendString = '';
 
-      for(let i = items.length - 1; i >= 0; i--)
-      {
-          if(items[i] === 'paper')
-          {
-              let string = "<img onClick='paperPopup()' class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
-              appendString += string;
-          } else {
-              let string = "<img class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
-              appendString += string;
-          }
-      }
+        for (let i = items.length - 1; i >= 0; i--) {
+            if (items[i] === 'paper') {
+                let string = "<img onClick='paperPopup()' class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
+                appendString += string;
+            } else {
+                let string = "<img class='" + items[i] + " inventoryItem' src='../../assets/images/" + items[i] + ".png'>";
+                appendString += string;
+            }
+        }
 
-    $('#inventory').prepend(appendString);
-  }
+        $('#inventory').prepend(appendString);
+    }
 }
 
 function inventoryIndexOf(number) {
@@ -81,12 +76,12 @@ function inventoryIndexOf(number) {
     alert(inventory[number]);
 }
 
-function removeCat(){
-    if(catRemoved==false){
+function removeCat() {
+    if (catRemoved == false) {
         document.getElementById('jojoSFX').style.opacity = "0";
         document.getElementById('cat').style.opacity = "0";
         catRemoved = true;
-    }else{
+    } else {
         document.getElementById('jojoSFX').style.opacity = "1";
         document.getElementById('cat').style.opacity = "1";
         catRemoved = false;
@@ -94,14 +89,9 @@ function removeCat(){
     localStorage.setItem('catRemoved', catRemoved);
 }
 
-function openBox(){
-    if(catRemoved){
+function openBox() {
+    if (catRemoved) {
         addItem('gasSuit');
-    }
-}
-function skidoUnlock(){
-    if(inventory.includes("skidoKeys")){
-        addItem('paper');
     }
 }
 
@@ -148,7 +138,7 @@ function enter() {
     comparePasswords();
 }
 
-function  goToTopFloorBackRoom(){
+function goToTopFloorBackRoom() {
     window.location.href = "./topFloorBackRoom.html";
 }
 
@@ -240,22 +230,40 @@ function openPopup(id) {
 }
 
 // When the user clicks on <span> (x), close the modal
-function closethisshit() {
-    document.getElementById("numberpadContainer").style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
+function closethisshit(id) {
+    if (id == "numberpad") {
         document.getElementById("numberpadContainer").style.display = "none";
+    } else if (id == "slider") {
+        document.getElementById("sliderContainer").style.display = "none";
     }
 }
 
-function goToGarage(){
-  if(inventory.includes("keyFragment1") && inventory.includes("keyFragment2") && inventory.includes("keyFragment3")){
-    window.location.href = "./garage.html";
-  }else{
-    alert("This door seems locked!")
-  }
+
+
+function passwordChecker() {
+    var password = document.getElementById("psw");
+    if (password.value == "bitcoin") {
+        alert("YOU DID IT DADDY");
+        console.log(psw);
+    } else {
+        alert("wrong password");
+        console.log(psw);
+    }
+}
+
+function openPasswordForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closePasswordForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+
+function goToGarage() {
+    if (inventory.includes("skidoKeys")) {
+        window.location.href = "./garage.html";
+    } else {
+        alert("This door seems locked!");
+    }
 
 }
