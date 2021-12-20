@@ -14,21 +14,22 @@ function addItem(item) {
         document.getElementById(item).style.marginTop = "2rem";
     }
 }
-window.onload = function loadInventory(){
-  console.log(localStorage.getItem(inventory));
-  if(localStorage.getItem(inventory) != null){
-    inventory =  localStorage.getItem(inventory);
-    inventory.forEach(item => {
-      var element = document.createElement('img');
-      element.setAttribute("id", item);
-      document.getElementById('inventory').appendChild(element);
-      document.getElementById(item).src="../../assets/images/"+item+".png";
-      document.getElementById(item).style.marginRight = "2rem";
-      document.getElementById(item).style.marginTop = "2rem";
-    });
-  }
+window.onload = function loadInventory() {
+    console.log(localStorage.getItem(inventory));
+    if (localStorage.getItem(inventory) != null) {
+        inventory = localStorage.getItem(inventory);
+        inventory.forEach(item => {
+            var element = document.createElement('img');
+            element.setAttribute("id", item);
+            document.getElementById('inventory').appendChild(element);
+            document.getElementById(item).src = "../../assets/images/" + item + ".png";
+            document.getElementById(item).style.marginRight = "2rem";
+            document.getElementById(item).style.marginTop = "2rem";
+        });
+    }
 }
-function inventoryIndexOf(number){
+
+function inventoryIndexOf(number) {
     inventory = localStorage.getItem('inventory');
     inventory = inventory.split(',');
     alert(inventory[number]);
@@ -46,6 +47,7 @@ function removeCat(){
     }
     localStorage.setItem('catRemoved', catRemoved);
 }
+
 function openBox(){
     if(catRemoved){
         addItem('gasSuit');
@@ -62,13 +64,14 @@ function goToGroundFloor() {
     }
 }
 
-function goToBottomFloor(){
+function goToBottomFloor() {
     window.location.href = "./bottomFloor.html";
 }
-function goToTopFloor(){
+
+function goToTopFloor() {
     inventory = localStorage.getItem('inventory');
-    if(inventory != null){
-        if(inventory.includes("gasSuit")){
+    if (inventory != null) {
+        if (inventory.includes("gasSuit")) {
             window.location.href = "./topFloor.html";
         } else {
             alert("You gonna die bitch!")
@@ -171,9 +174,17 @@ function clickTile(row, column) {
 
 
 // When the user clicks the button, open the modal
-function openBox() {
-    document.getElementById("numberpadContainer").style.display = "block";
-    console.log("modal has been sucessfully opened");
+function openPopup(id) {
+    if (id == "numberpad") {
+        document.getElementById("numberpadContainer").style.display = "block";
+        console.log("modal has been sucessfully opened");
+    }
+
+    if (id == "slider") {
+        shuffle();
+        document.getElementById("sliderContainer").style.display = "block";
+        console.log("modal has been successfully opened");
+    }
 }
 
 // When the user clicks on <span> (x), close the modal
