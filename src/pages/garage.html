@@ -12,46 +12,48 @@
 </head>
 
 <body>
-    <div id="mainContainer">
-        <div id="imageContainer">
-            <div id="sliderPuzzleTrigger" onclick="openPopup('slider')"></div>
-            <div id="skidoPaperTrigger" onclick="skidoUnlock()"></div>
-            <div onclick="goToGroundFloor()" id="garageTrigger">
-                <div class="child bounce">
-                    <img src="../../assets/images/newArrow.png" id="garageArrow">
-                    <p id="garageText">Back to ground floor</p>
-                </div>
+<div id="mainContainer">
+    <div id="imageContainer">
+        <div id="sliderPuzzleTrigger" onclick="openPopup('slider')"></div>
+        <div id="skidoPaperTrigger" onclick="skidoUnlock()"></div>
+        <div onclick="goToGroundFloor()" id="garageTrigger">
+            <div class="child bounce">
+                <img src="../../assets/images/newArrow.png" id="garageArrow">
+                <p id="garageText">Back to ground floor</p>
             </div>
-            <img id="skidoKeys" src="../../assets/images/skidoKeys.png" alt="skido">
-            <img src="../../assets/images/cat.png" id="cat">
         </div>
-        <div id="inventory"></div>
+        <img id="skidoKeys" src="../../assets/images/skidoKeys.png" alt="skido">
+        <img src="../../assets/images/cat.png" id="cat">
     </div>
+    <div id="inventory"></div>
+</div>
 
-    <div id=sliderContainer class="modal">
-        <div id=sliderContent class="modal-content">
-            <span onclick="closethisshit('slider')">&times;</span>
-            <div id="table" style="display: table;">
-                <div id="row1" style="display: table-row;">
-                    <div id="cell11" class="tile1" onClick="clickTile(1,1);"></div>
-                    <div id="cell12" class="tile2" onClick="clickTile(1,2);"></div>
-                    <div id="cell13" class="tile3" onClick="clickTile(1,3);"></div>
-                </div>
-                <div id="row2" style="display: table-row;">
-                    <div id="cell21" class="tile4" onClick="clickTile(2,1);"></div>
-                    <div id="cell22" class="tile5" onClick="clickTile(2,2);"></div>
-                    <div id="cell23" class="tile6" onClick="clickTile(2,3);"></div>
-                </div>
-                <div id="row3" style="display: table-row;">
-                    <div id="cell31" class="tile7" onClick="clickTile(3,1);"></div>
-                    <div id="cell32" class="tile8" onClick="clickTile(3,2);"></div>
-                    <div id="cell33" class="tile9" onClick="clickTile(3,3);"></div>
-                </div>
-
+<div id=sliderContainer class="modal">
+    <div id=sliderContent class="modal-content">
+        <div onclick="closethisshit('slider')">
+            <span class="close" id="xbutton">&times;</span>
+        </div>
+        <div id="table" style="display: table;">
+            <div id="row1" style="display: table-row;">
+                <div id="cell11" class="tile1" onClick="clickTile(1,1);"></div>
+                <div id="cell12" class="tile2" onClick="clickTile(1,2);"></div>
+                <div id="cell13" class="tile3" onClick="clickTile(1,3);"></div>
+            </div>
+            <div id="row2" style="display: table-row;">
+                <div id="cell21" class="tile4" onClick="clickTile(2,1);"></div>
+                <div id="cell22" class="tile5" onClick="clickTile(2,2);"></div>
+                <div id="cell23" class="tile6" onClick="clickTile(2,3);"></div>
+            </div>
+            <div id="row3" style="display: table-row;">
+                <div id="cell31" class="tile7" onClick="clickTile(3,1);"></div>
+                <div id="cell32" class="tile8" onClick="clickTile(3,2);"></div>
+                <div id="cell33" class="tile9" onClick="clickTile(3,3);"></div>
             </div>
 
         </div>
+
     </div>
+</div>
 
 </body>
 

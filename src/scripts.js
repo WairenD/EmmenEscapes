@@ -249,7 +249,7 @@ function closethisshit(id) {
 function passwordChecker() {
     var password = document.getElementById("psw");
     if (password.value == "bitcoin") {
-        alert("YOU DID IT DADDY");
+        window.location.href = "./finishPage.html";
         console.log(psw);
     } else {
         alert("wrong password");

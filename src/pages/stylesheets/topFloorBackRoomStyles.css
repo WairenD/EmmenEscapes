@@ -32,7 +32,6 @@ body {
     top: 9vh;
     width: 1.8vw;
     height: 18vh;
-    background-color: blue;
     opacity: .5;
 }
 
@@ -42,7 +41,6 @@ body {
     top: 20vh;
     width: 5vw;
     height: 7vh;
-    background-color: red;
     opacity: .5;
 }
 

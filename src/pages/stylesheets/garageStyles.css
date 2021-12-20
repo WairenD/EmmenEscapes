@@ -47,7 +47,6 @@ body {
     bottom: 33vh;
     height: 3vh;
     width: 3vh;
-    background-color: red;
     opacity: .5;
     z-index: 10
 }
@@ -58,7 +57,6 @@ body {
     bottom: 28vh;
     height: 4vh;
     width: 2.5vh;
-    background-color: blue;
     opacity: .5;
     z-index: 10
 }
@@ -96,7 +94,7 @@ body {
 .modal {
     display: none;
     /* Hidden by default */
-    position: fixed;
+    position: absolute;
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
@@ -117,29 +115,19 @@ body {
 }
 
 
-/* Modal Content */
-
-.modal-content {
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-
 /* The Close Button */
 
 .close {
-    color: #aaaaaa;
+    color: #ffffff;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    border-color: rgb(0, 0, 0, 0);
+    border-color: rgb(255, 255, 255);
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
 }
@@ -196,4 +184,10 @@ body {
 .tile9 {
     background: white;
     cursor: default;
+}
+
+#sliderContent {
+    position: absolute;
+    left: 45vw;
+    outline: none;
 }
