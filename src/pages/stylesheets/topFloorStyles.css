@@ -1,27 +1,32 @@
 /* main background */
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: black;
 }
+
 #mainContainer {
     height: 100%;
     width: 100%;
     margin: auto;
 }
+
 #imageContainer {
     position: relative;
     background-image: url("../../../assets/gameStates/topFloor-cat-keys.png");
-    height:80vh;
+    height: 80vh;
     width: 70vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
 }
-#key1Hitbox{
+
+#key1Hitbox {
     position: absolute;
     left: 19vw;
     top: 16.5vh;
@@ -30,10 +35,13 @@ body{
     opacity: .5;
     background-color: red;
 }
-#key1Hitbox:hover,#key2Hitbox:hover{
+
+#key1Hitbox:hover,
+#key2Hitbox:hover {
     cursor: pointer;
 }
-#key2Hitbox{
+
+#key2Hitbox {
     position: absolute;
     left: 31.5vw;
     top: 16.5vh;
@@ -43,7 +51,7 @@ body{
     background-color: red;
 }
 
-#safeDoorHitbot{
+#safeDoorHitbot {
     position: absolute;
     left: 47.5vw;
     top: 9vh;
@@ -53,16 +61,190 @@ body{
     opacity: .5;
 }
 
-
 #houseImage {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
+
+
 /* player avatar positions ground floor*/
+
 #playerAvatar {
     max-width: 3%;
     height: auto;
-    position:absolute;
-    top:38.5%;
-    left:45%;
+    position: absolute;
+    top: 38.5%;
+    left: 45%;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 1);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-color: rgb(0, 0, 0, 0);
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#numberpadContainer {
+    position: absolute;
+    background-image: url("../../../assets/images/numpad.png");
+    height: 50vh;
+    width: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 10vh;
+    left: 30vw;
+    opacity: 0.9;
+}
+
+#button1 {
+    position: absolute;
+    left: 17.5vw;
+    bottom: 38vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button2 {
+    position: absolute;
+    left: 22.7vw;
+    bottom: 38vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button3 {
+    position: absolute;
+    left: 27.9vw;
+    bottom: 38vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button4 {
+    position: absolute;
+    left: 17.5vw;
+    bottom: 30.5vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button5 {
+    position: absolute;
+    left: 22.7vw;
+    bottom: 30.5vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button6 {
+    position: absolute;
+    left: 27.9vw;
+    bottom: 30.5vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button7 {
+    position: absolute;
+    left: 17.5vw;
+    bottom: 22.5vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button8 {
+    position: absolute;
+    left: 22.7vw;
+    bottom: 22.5vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button9 {
+    position: absolute;
+    left: 27.9vw;
+    bottom: 22.5vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#resetButton {
+    position: absolute;
+    left: 17.5vw;
+    bottom: 15.3vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button0 {
+    position: absolute;
+    left: 22.7vw;
+    bottom: 15.3vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#enterButton {
+    position: absolute;
+    left: 27.9vw;
+    bottom: 15.3vh;
+    width: 4.5vw;
+    height: 6vh;
+    opacity: 50%;
 }
