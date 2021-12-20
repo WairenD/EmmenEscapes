@@ -22,12 +22,12 @@ function inventoryIndexOf(number){
 
 function removeCat(){
     if(catRemoved==false){
-        document.getElementById('imageContainer').style.backgroundImage ="url('../../assets/gameStates/no cat no keys/bottomFloor-noCat-noKeys.png')";
-        document.getElementById('sfxJoJo').style.opacity = "0";
+        document.getElementById('jojoSFX').style.opacity = "0";
+        document.getElementById('cat').style.opacity = "0";
         catRemoved = true;
     }else{
-        document.getElementById('imageContainer').style.backgroundImage ="url('../../assets/gameStates/no keys/bottomFloor-cat-noKeys.png')";
-        document.getElementById('sfxJoJo').style.opacity = "1";
+        document.getElementById('jojoSFX').style.opacity = "1";
+        document.getElementById('cat').style.opacity = "1";
         catRemoved = false;
     }
     localStorage.setItem('catRemoved', catRemoved);

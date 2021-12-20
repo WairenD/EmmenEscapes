@@ -34,3 +34,16 @@
   display: flex;
   margin: auto;
 }
+#jojoSFX{
+  position: absolute;
+  right: 10.5vw;
+  bottom: 8vh;
+  z-index: 2;
+  opacity: 0;
+}
+#cat{
+  position: absolute;
+  right: 13vw;
+  bottom: 8.5vh;
+  width: 5rem;
+}
