@@ -1,0 +1,29 @@
+#doorHitboxGround{
+    position: absolute;
+    left: 24vw;
+    bottom: 27.5vh;
+    width: 7vw;
+    height: 15.5vh;
+    background-color: green;
+    opacity: .5;
+}
+
+#doorHitboxBottom{
+    position: absolute;
+    left: 24vw;
+    bottom: 4vh;
+    width: 7vw;
+    height: 15.5vh;
+    background-color: green;
+    opacity: .5;
+}
+
+#doorHitboxTop{
+    position: absolute;
+    left: 24vw;
+    top: 11.5vh;
+    width: 7vw;
+    height: 15.5vh;
+    background-color: green;
+    opacity: .5;
+}

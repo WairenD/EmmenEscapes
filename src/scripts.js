@@ -46,7 +46,6 @@ function goToGroundFloor(){
     }
 }
 function goToBottomFloor(){
-    location.assign("./bottomFloor/bottomFloor.html");
     window.location.href = "./bottomFloor.html";
 }
 function goToTopFloor(){

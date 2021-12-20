@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="stylesheets/gamePageStyles.css">
+    <link rel="stylesheet" href="stylesheets/bottomFloorStyles.css">
+    <link rel="stylesheet" href="globalStyles.css">
     <script src="../scripts.js"></script>
     <meta name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -11,8 +12,10 @@
 <body>
     <div id="mainContainer">
         <div id="imageContainer">
+            <div id="doorHitboxTop"></div>
+            <div onclick="goToGroundFloor()" id="doorHitboxGround"></div>
             <div onclick="addItem('keyFragment1')" id="key1Hitbox"></div>
-            <div id="doorHitbox"></div>
+            <div id="doorHitboxBottom"></div>
             <div onclick="addItem('keyFragment2')" id="key2Hitbox"></div>
             <div onclick="removeCat()" id="catHitbox"></div>
             <div onclick="openBox()" id="boxHitbox"></div>

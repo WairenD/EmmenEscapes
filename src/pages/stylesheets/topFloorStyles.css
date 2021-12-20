@@ -13,7 +13,7 @@ body{
 }
 #imageContainer {
     position: relative;
-    background-image: url("../../../assets/images/house.png");
+    background-image: url("../../../assets/gameStates/topFloor-cat-keys.png");
     height:80vh;
     width: 70vw;
     background-position: center;
@@ -42,15 +42,7 @@ body{
     opacity: .5;
     background-color: red;
 }
-#doorHitbox{
-    position: absolute;
-    left: 24vw;
-    top: 11.5vh;
-    width: 7vw;
-    height: 15.5vh;
-    background-color: green;
-    opacity: .5;
-}
+
 #safeDoorHitbot{
     position: absolute;
     left: 47.5vw;
@@ -60,6 +52,8 @@ body{
     background-color: blue;
     opacity: .5;
 }
+
+
 #houseImage {
     height:100%;
     width:100%;
