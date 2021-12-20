@@ -99,6 +99,11 @@ function openBox(){
         addItem('gasSuit');
     }
 }
+function skidoUnlock(){
+    if(inventory.includes("skidoKeys")){
+        addItem('paper');
+    }
+}
 
 function goToGroundFloor() {
     if (sessionStorage.getItem('catRemoved')) {
@@ -244,7 +249,7 @@ window.onclick = function(event) {
 }
 
 function goToGarage(){
-  if(inventory.includes("skidoKeys")){
+  if(inventory.includes("keyFragment1") && inventory.includes("keyFragment2") && inventory.includes("keyFragment3")){
     window.location.href = "./garage.html";
   }else{
     alert("This door seems locked!")
