@@ -2,7 +2,6 @@ var inventory = [];
 var catRemoved = false;
 
 $(document).ready(function () {
-    console.log(123)
     let items = localStorage.getItem('inventory');
     items = items.split(',');
     for(let i = 0; i < items.length; i++)
@@ -246,5 +245,10 @@ window.onclick = function(event) {
 }
 
 function goToGarage(){
+  if(inventory.includes("skidoKeys")){
     window.location.href = "./garage.html";
+  }else{
+    alert("This door seems locked!")
+  }
+
 }
