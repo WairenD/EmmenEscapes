@@ -108,10 +108,10 @@ function goToTopFloor() {
         if (inventory.includes("gasSuit")) {
             window.location.href = "./topFloor.html";
         } else {
-            alert("You gonna die bitch!")
+            alert("")
         }
     } else {
-        alert("You gonna die bitch!")
+        alert("")
     }
 }
 

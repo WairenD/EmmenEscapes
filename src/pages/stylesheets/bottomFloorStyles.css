@@ -28,10 +28,6 @@ body{
   width: 5vw;
   height: 10.5vh;
   opacity: .5;
-  background-color: red;
-}
-#key1Hitbox:hover,#key2Hitbox:hover{
-  cursor: pointer;
 }
 #key2Hitbox{
   position: absolute;
@@ -40,7 +36,6 @@ body{
   width: 4.5vw;
   height: 10.5vh;
   opacity: .5;
-  background-color: red;
 }
 
 #boxHitbox{
@@ -49,7 +44,6 @@ body{
   bottom: 4vh;
   width: 5.7vw;
   height: 5vh;
-  background-color: blue;
   opacity: .5;
 }
 #catHitbox{
@@ -58,7 +52,6 @@ body{
   bottom: 9vh;
   width: 5.7vw;
   height: 4.5vh;
-  background-color: red;
   opacity: .5;
   z-index: 10
 }
