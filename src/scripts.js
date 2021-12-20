@@ -119,3 +119,7 @@ window.onclick = function(event) {
         document.getElementById("numberpadContainer").style.display = "none";
     }
 }
+
+function goToGarage(){
+    window.location.href = "./garage.html";
+}
