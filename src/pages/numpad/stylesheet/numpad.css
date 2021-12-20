@@ -1,0 +1,146 @@
+/* main background */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: grey;
+}
+
+#mainContainer {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+#imageContainer {
+    position: relative;
+    background-image: url("../../../../assets/images/numpad.png");
+    height: 70vh;
+    width: 70vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+#button1 {
+    position: absolute;
+    left: 26.5vw;
+    bottom: 45vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button2 {
+    position: absolute;
+    left: 32.5vw;
+    bottom: 45vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button3 {
+    position: absolute;
+    left: 38.5vw;
+    bottom: 45vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button4 {
+    position: absolute;
+    left: 26.5vw;
+    bottom: 36vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button5 {
+    position: absolute;
+    left: 32.5vw;
+    bottom: 36vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button6 {
+    position: absolute;
+    left: 38.5vw;
+    bottom: 36vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button7 {
+    position: absolute;
+    left: 26.5vw;
+    bottom: 27vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button8 {
+    position: absolute;
+    left: 32.5vw;
+    bottom: 27vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button9 {
+    position: absolute;
+    left: 38.5vw;
+    bottom: 27vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#resetButton {
+    position: absolute;
+    left: 26.5vw;
+    bottom: 18vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#button0 {
+    position: absolute;
+    left: 32.5vw;
+    bottom: 18vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+}
+
+#enterButton {
+    position: absolute;
+    left: 38.5vw;
+    bottom: 18vh;
+    width: 5.2vw;
+    height: 6vh;
+    opacity: 50%;
+    ;
+}
+
+
+/* UI */
+
+#inventory {
+    width: 70vw;
+    height: 10vh;
+    color: white;
+    margin: auto;
+}
