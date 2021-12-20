@@ -13,7 +13,7 @@ body{
 }
 #imageContainer {
     position: relative;
-    background-image: url("../../../assets/gameStates/no keys/start-cat-noKeys.png");
+    background-image: url("../../../assets/gameStates/no keys/garage-cat-noKeys.png");
     height:80vh;
     width: 70vw;
     background-position: center;
@@ -24,8 +24,8 @@ body{
 
 #garageTrigger{
     position: absolute;
-    left: 10vw;
-    top: 38vh;
+    right: 3vw;
+    top: 44vh;
     width: 4vw;
     height: 4vw;
     display: flex;
@@ -34,6 +34,7 @@ body{
 #garageArrow{
     height: 50px;
     width: 50px;
+    transform: scaleX(-1);
 }
 
 .child {
@@ -58,13 +59,4 @@ body{
     0%   { transform: translateY(0); }
     50%  { transform: translateY(-20px); }
     100% { transform: translateY(0); }
-}
-
-/* player avatar positions ground floor*/
-#playerAvatar {
-    max-width: 3%;
-    height: auto;
-    position:absolute;
-    top:38.5%;
-    left:45%;
 }

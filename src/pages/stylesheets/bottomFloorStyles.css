@@ -13,7 +13,7 @@ body{
 }
 #imageContainer {
     position: relative;
-    background-image: url("../../../assets/gameStates/bottomFloor-cat-keys.png");
+    background-image: url("../../../assets/gameStates/no keys/bottomFloor-cat-noKeys.png");
     height:80vh;
     width: 70vw;
     background-position: center;
@@ -80,12 +80,4 @@ body{
     position:absolute;
     top:38.5%;
     left:45%;
-}
-
-/* UI */
-#inventory {
-    width: 70vw;
-    height: 10vh;
-    color:white;
-    margin: auto;
 }
