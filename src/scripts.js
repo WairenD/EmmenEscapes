@@ -14,36 +14,27 @@ function addItem(item) {
         document.getElementById(item).style.marginTop = "2rem";
     }
 }
-window.onload = function loadInventory(){
-  console.log(localStorage.getItem(inventory));
-  if(localStorage.getItem(inventory) != null){
-    inventory =  localStorage.getItem(inventory);
-    inventory.forEach(item => {
-      var element = document.createElement('img');
-      element.setAttribute("id", item);
-      document.getElementById('inventory').appendChild(element);
-      document.getElementById(item).src="../../assets/images/"+item+".png";
-      document.getElementById(item).style.marginRight = "2rem";
-      document.getElementById(item).style.marginTop = "2rem";
-    });
-  }
+window.onload = function loadInventory() {
+    console.log(localStorage.getItem(inventory));
+    if (localStorage.getItem(inventory) != null) {
+        inventory = localStorage.getItem(inventory);
+        inventory.forEach(item => {
+            var element = document.createElement('img');
+            element.setAttribute("id", item);
+            document.getElementById('inventory').appendChild(element);
+            document.getElementById(item).src = "../../assets/images/" + item + ".png";
+            document.getElementById(item).style.marginRight = "2rem";
+            document.getElementById(item).style.marginTop = "2rem";
+        });
+    }
 }
-function inventoryIndexOf(number){
+
+function inventoryIndexOf(number) {
     inventory = localStorage.getItem('inventory');
     inventory = inventory.split(',');
     alert(inventory[number]);
 }
 
-<<<<<<< Updated upstream
-function removeCat(){
-    if(catRemoved==false){
-        document.getElementById('jojoSFX').style.opacity = "0";
-        document.getElementById('cat').style.opacity = "0";
-        catRemoved = true;
-    }else{
-        document.getElementById('jojoSFX').style.opacity = "1";
-        document.getElementById('cat').style.opacity = "1";
-=======
 function removeCat() {
     if (catRemoved == false) {
         document.getElementById('imageContainer').style.backgroundImage = "url('../../assets/gameStates/no cat no keys/bottomFloor-noCat-noKeys.png')";
@@ -52,19 +43,13 @@ function removeCat() {
     } else {
         document.getElementById('imageContainer').style.backgroundImage = "url('../../assets/gameStates/no keys/bottomFloor-cat-noKeys.png')";
         document.getElementById('sfxJoJo').style.opacity = "1";
->>>>>>> Stashed changes
         catRemoved = false;
     }
     localStorage.setItem('catRemoved', catRemoved);
 }
-<<<<<<< Updated upstream
-function openBox(){
-    if(catRemoved){
-=======
 
 function openBox() {
     if (catRemoved) {
->>>>>>> Stashed changes
         addItem('gasSuit');
     }
 }
@@ -79,13 +64,14 @@ function goToGroundFloor() {
     }
 }
 
-function goToBottomFloor(){
+function goToBottomFloor() {
     window.location.href = "./bottomFloor.html";
 }
-function goToTopFloor(){
+
+function goToTopFloor() {
     inventory = localStorage.getItem('inventory');
-    if(inventory != null){
-        if(inventory.includes("gasSuit")){
+    if (inventory != null) {
+        if (inventory.includes("gasSuit")) {
             window.location.href = "./topFloor.html";
         } else {
             alert("You gonna die bitch!")
@@ -94,13 +80,10 @@ function goToTopFloor(){
         alert("You gonna die bitch!")
     }
 }
-<<<<<<< Updated upstream
-=======
 
 function getInventory(value, index, array) {
     txt += value + " ";
 }
->>>>>>> Stashed changes
 
 var password = "21706694";
 var insertedPassword = "";
@@ -194,14 +177,8 @@ function clickTile(row, column) {
 // Get the <span> element that closes the modal
 
 
-<<<<<<< Updated upstream
-// When the user clicks the button, open the modal
-function openBox() {
-    document.getElementById("numberpadContainer").style.display = "block";
-    console.log("modal has been sucessfully opened");
-=======
 // When the user clicks the button, open the modal 
-function openBox(id) {
+function openPopup(id) {
     if (id == "numberpad") {
         document.getElementById("numberpadContainer").style.display = "block";
         console.log("modal has been sucessfully opened");
@@ -212,7 +189,6 @@ function openBox(id) {
         document.getElementById("sliderContainer").style.display = "block";
         console.log("modal has been successfully opened");
     }
->>>>>>> Stashed changes
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -235,17 +211,7 @@ window.onclick = function(event) {
         document.getElementById("sliderContainer").style.display = "none"
     }
 }
-<<<<<<< Updated upstream
-=======
 
 function goToGarage() {
     window.location.href = "./garage.html";
 }
-<<<<<<< Updated upstream
-
-function goToGarage(){
-    window.location.href = "./garage.html";
-}
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
