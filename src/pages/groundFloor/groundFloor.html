@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="../groundFloor/stylesheet/groundFloorStyles.css">
+    <link rel="stylesheet" href="./stylesheet/groundFloorStyles.css">
+    <script src="../../scripts.js"></script>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 <body>
-    <div id="mainContainer">
-        <div>
-            <img id="playerAvatar" src="../../../assets/images/scientist%201.png">
-        </div>
-
-        <div id="imageContainer">
-        </div>
-
-        <div id="inventory">
-
-        </div>
+<div id="mainContainer">
+    <div id="imageContainer">
+        <div onclick="goToTopFloor()" id="doorHitboxTop"></div>
+        <div onclick="goToGroundFloor()" id="doorHitboxGround"></div>
+        <div onclick="goToBottomFloor()" id="doorHitboxBottom"></div>
     </div>
+    <div id="inventory"></div>
+</div>
 </body>
 </html>
