@@ -16,7 +16,7 @@
             <div onclick="addItem('keyFragment1')" id="key1Hitbox"></div>
             <div id="doorHitboxTop"></div>
             <div onclick="addItem('keyFragment2')" id="key2Hitbox"></div>
-            <div onclick="openBox()" id="safeDoorHitbot"></div>
+            <div onclick="openBox('numberpad')" id="safeDoorHitbot"></div>
             <div onclick="goToGroundFloor()" id="doorHitboxGround"></div>
             <div onclick="goToBottomFloor()" id="doorHitboxBottom"></div>
         </div>
@@ -25,7 +25,8 @@
     <!---modal for numberpad-->
     <div id="numberpadContainer" class="modal">
         <div class="modal-content">
-            <div onclick="closethisshit()" <span class="close">&times;</span>
+            <div onclick="closethisshit('numberpad')">
+                <span class="close">&times;</span>
             </div>
             <div onclick="buttonClick('1')" id="button1"></div>
             <div onclick="buttonClick('2')" id="button2"></div>
