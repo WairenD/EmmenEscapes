@@ -33,14 +33,7 @@ body {
     width: 5vw;
     height: 10.5vh;
     opacity: .5;
-    background-color: red;
 }
-
-#key1Hitbox:hover,
-#key2Hitbox:hover {
-    cursor: pointer;
-}
-
 #key2Hitbox {
     position: absolute;
     left: 31.5vw;
@@ -48,7 +41,6 @@ body {
     width: 4.5vw;
     height: 10.5vh;
     opacity: .5;
-    background-color: red;
 }
 
 #safeDoorHitbot {
