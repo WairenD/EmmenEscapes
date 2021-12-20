@@ -39,11 +39,3 @@ body{
     top:38.5%;
     left:45%;
 }
-
-/* UI */
-#inventory {
-    width: 70vw;
-    height: 10vh;
-    color:white;
-    margin: auto;
-}

@@ -1,15 +1,17 @@
 var inventory = [];
 var catRemoved = false;
-let txt = "";
+
 
 function addItem(item){
     if(!inventory.includes(item) || inventory == null){
         inventory.push(item);
         sessionStorage.setItem('inventory', inventory);
-
-        inventory.forEach(getInventory);
-        document.getElementById("inventory").innerHTML = txt;
-        txt = "";
+        var element = document.createElement('img');
+        element.setAttribute("id", item);
+        document.getElementById('inventory').appendChild(element);
+        document.getElementById(item).src="../../assets/images/"+item+".png";
+        document.getElementById(item).style.marginRight = "2rem";
+        document.getElementById(item).style.marginTop = "2rem";
     }
 }
 function inventoryIndexOf(number){
@@ -20,11 +22,11 @@ function inventoryIndexOf(number){
 
 function removeCat(){
     if(catRemoved==false){
-        document.getElementById('imageContainer').style.backgroundImage ="url('../../../assets/images/house-no-cat.png')";
+        document.getElementById('imageContainer').style.backgroundImage ="url('../../assets/gameStates/no cat no keys/bottomFloor-noCat-noKeys.png')";
         document.getElementById('sfxJoJo').style.opacity = "0";
         catRemoved = true;
     }else{
-        document.getElementById('imageContainer').style.backgroundImage ="url('../../../assets/images/house.png')";
+        document.getElementById('imageContainer').style.backgroundImage ="url('../../assets/gameStates/no keys/bottomFloor-cat-noKeys.png')";
         document.getElementById('sfxJoJo').style.opacity = "1";
         catRemoved = false;
     }
@@ -32,7 +34,7 @@ function removeCat(){
 }
 function openBox(){
     if(catRemoved){
-        addItem('hazmatSuit');
+        addItem('gasSuit');
     }
 }
 function goToGroundFloor(){
@@ -59,7 +61,4 @@ function goToTopFloor(){
     }else{
         alert("You gonna die bitch!")
     }
-}
-function getInventory(value, index, array) {
-    txt += value + " ";
 }
