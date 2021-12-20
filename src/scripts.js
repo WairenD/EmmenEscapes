@@ -135,7 +135,6 @@ var failSound = new Audio('../../assets/audio/Hit damage 1.wav');
 
 function buttonClick(button) {
     buttonClickSound.play();
-
     insertedPassword += button;
     console.log(insertedPassword);
 }
